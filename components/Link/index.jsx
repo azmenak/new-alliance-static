@@ -16,7 +16,7 @@ function isModifiedEvent(event) {
   return !!(event.metaKey || event.altKey || event.ctrlKey || event.shiftKey);
 }
 
-class Link extends Component {
+export default class Link extends Component {
 
   static propTypes = {
     to: PropTypes.string.isRequired,
@@ -25,7 +25,7 @@ class Link extends Component {
     onClick: PropTypes.func,
   };
 
-  static handleClick = event => {
+  static handleClick(event) {
     let allowTransition = true;
     let clickResult;
 
@@ -55,7 +55,4 @@ class Link extends Component {
     const { to, children, ...props } = this.props;
     return <a {...props} onClick={Link.handleClick.bind(this)}>{children}</a>;
   }
-
 }
-
-export default Link;

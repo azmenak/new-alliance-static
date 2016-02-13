@@ -149,6 +149,9 @@ const appConfig = merge({}, config, {
       },
     ],
   },
+  resolve: {
+    extensions: ['', '.js', '.jsx', '.json']
+  }
 });
 
 // Configuration for server-side pre-rendering bundle
@@ -181,6 +184,9 @@ const pagesConfig = merge({}, config, {
       },
     ],
   },
+  resolve: {
+    extensions: ['', '.js', '.jsx', '.json']
+  }
 });
 
 export default [appConfig, pagesConfig];

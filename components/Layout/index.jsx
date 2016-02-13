@@ -12,7 +12,7 @@ function Layout({ children }) {
   return (
     <div className="Layout">
       <Navigation />
-      {children}
+      { children }
     </div>
   );
 }
