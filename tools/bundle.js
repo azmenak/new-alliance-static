@@ -17,7 +17,7 @@ export default function bundleMaker(options) {
           reject(err);
         } else {
           console.log(stats.toString(webpackConfig[0].stats));
-          resolve();
+          resolve(stats);
         }
       };
       bundler.run(run);

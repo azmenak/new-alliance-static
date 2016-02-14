@@ -1,12 +1,7 @@
-/**
- * React Static Boilerplate
- * https://github.com/koistya/react-static-boilerplate
- * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
- */
-
 import path from 'path';
 import webpack from 'webpack';
 import _ from 'lodash';
+import AssetsPlugin from 'assets-webpack-plugin';
 
 const autoprefixerBrowsers = [
   'Android 2.3',
@@ -36,7 +31,7 @@ export function baseConfig({ debug, verbose, watch }) {
     output: {
       path: path.join(__dirname, '../build'),
       publicPath: '/',
-      sourcePrefix: '  ',
+      sourcePrefix: '  '
     },
     cache: false,
     debug,
@@ -53,6 +48,7 @@ export function baseConfig({ debug, verbose, watch }) {
     },
     plugins: [
       new webpack.optimize.OccurenceOrderPlugin(),
+      new AssetsPlugin({path: path.join(__dirname, '../build')}),
       new webpack.DefinePlugin({
         'process.env.NODE_ENV': debug ? '"development"' : '"production"',
         '__DEV__': debug,
@@ -95,7 +91,7 @@ export function baseConfig({ debug, verbose, watch }) {
 
 // Configuration for the client-side bundle
 export function appConfig(options) {
-  const { debug, watch } = options;
+  const { debug, watch, verbose } = options;
   const config = baseConfig(options);
 
   const devOptions = watch ? {
@@ -113,8 +109,11 @@ export function appConfig(options) {
       './app.js'
     ]),
 
-    output: {
+    output: debug ? {
       filename: 'app.js',
+    } : {
+      filename: 'app.[hash].js',
+      chunkFilename: '[id].app.[hash].js'
     },
     // http://webpack.github.io/docs/configuration.html#devtool
     devtool: debug ? 'cheap-module-eval-source-map' : false,
@@ -166,7 +165,9 @@ export function appConfig(options) {
 export function pagesConfig(options) {
   const config = baseConfig(options);
   return _.merge({}, config, {
-    entry: './app.js',
+    entry: {
+      server: './app.js'
+    },
     output: {
       filename: 'app.node.js',
       libraryTarget: 'commonjs2',
@@ -182,7 +183,7 @@ export function pagesConfig(options) {
     },
     externals: /^[a-z][a-z\.\-\/0-9]*$/i,
     plugins: config.plugins.concat([
-      new webpack.optimize.LimitChunkCountPlugin({ maxChunks: 1 }),
+      new webpack.optimize.LimitChunkCountPlugin({ maxChunks: 6 }),
     ]),
     module: {
       loaders: [

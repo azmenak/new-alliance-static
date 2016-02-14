@@ -1,14 +1,9 @@
-/**
- * React Static Boilerplate
- * https://github.com/koistya/react-static-boilerplate
- * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
- */
-
 import React, { PropTypes } from 'react';
 import GoogleAnalytics from '../GoogleAnalytics';
 import config from '../../config';
 
-export default function Html({ title, description, body, debug }) {
+export default function Html({ title, description, body, debug, stats }) {
+  const scriptSrc = '/' + stats.main + (debug ? '?' + Date.now() : '');
   return (
     <html className="no-js" lang="">
       <head>
@@ -19,7 +14,7 @@ export default function Html({ title, description, body, debug }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
-        <script src={'/app.js?' + new Date().getTime()} />
+        <script src={scriptSrc} />
       </head>
       <body>
         <div id="app" dangerouslySetInnerHTML={{ __html: body }} />
@@ -34,4 +29,5 @@ Html.propTypes = {
   description: PropTypes.string,
   body: PropTypes.string.isRequired,
   debug: PropTypes.bool.isRequired,
+  stats: PropTypes.object.isRequired
 };

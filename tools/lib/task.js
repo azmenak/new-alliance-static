@@ -11,7 +11,7 @@ function format(time) {
 export default (fn) => async () => {
   const start = new Date();
   console.log(`[${format(start)}] Starting '${fn.name}'...`);
-  await fn();
+  return await fn();
   const end = new Date();
   const time = end.getTime() - start.getTime();
   console.log(`[${format(end)}] Finished '${fn.name}' after ${time}ms`);
