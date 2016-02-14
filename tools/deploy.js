@@ -34,7 +34,13 @@ export default task(async function deploy() {
   // Build the project in RELEASE mode which
   // generates optimized and minimized bundles
   process.argv.push('release');
-  await build();
+  const options = {
+    watch: false,
+    debug: false,
+    verbose: false,
+    release: true
+  };
+  await build(options);
 
   // Push the contents of the build folder to the remote server via Git
   await repo.add('--all .');

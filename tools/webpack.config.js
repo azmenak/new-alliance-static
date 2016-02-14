@@ -6,12 +6,9 @@
 
 import path from 'path';
 import webpack from 'webpack';
-import merge from 'lodash.merge';
+import _ from 'lodash';
 
-const DEBUG = !process.argv.includes('release');
-const VERBOSE = process.argv.includes('verbose');
-const WATCH = global.watch;
-const AUTOPREFIXER_BROWSERS = [
+const autoprefixerBrowsers = [
   'Android 2.3',
   'Android >= 4',
   'Chrome >= 35',
@@ -21,7 +18,8 @@ const AUTOPREFIXER_BROWSERS = [
   'Opera >= 12',
   'Safari >= 7.1',
 ];
-const JS_LOADER = {
+
+const jsLoader = {
   test: /\.jsx?$/,
   include: [
     path.resolve(__dirname, '../components'),
@@ -33,156 +31,168 @@ const JS_LOADER = {
   loader: 'babel-loader',
 };
 
-
-// Base configuration
-const config = {
-  output: {
-    path: path.join(__dirname, '../build'),
-    publicPath: '/',
-    sourcePrefix: '  ',
-  },
-  cache: false,
-  debug: DEBUG,
-  stats: {
-    colors: true,
-    reasons: DEBUG,
-    hash: VERBOSE,
-    version: VERBOSE,
-    timings: true,
-    chunks: VERBOSE,
-    chunkModules: VERBOSE,
-    cached: VERBOSE,
-    cachedAssets: VERBOSE,
-  },
-  plugins: [
-    new webpack.optimize.OccurenceOrderPlugin(),
-    new webpack.DefinePlugin({
-      'process.env.NODE_ENV': DEBUG ? '"development"' : '"production"',
-      '__DEV__': DEBUG,
-    }),
-  ],
-  module: {
-    loaders: [
-      {
-        test: /[\\\/]app\.js$/,
-        loader: path.join(__dirname, './lib/routes-loader.js'),
-      }, {
-        test: /\.json$/,
-        loader: 'json-loader',
-      }, {
-        test: /\.txt$/,
-        loader: 'raw-loader',
-      }, {
-        test: /\.(png|jpg|jpeg|gif|svg|woff|woff2)$/,
-        loader: 'url-loader?limit=10000',
-      }, {
-        test: /\.(eot|ttf|wav|mp3)$/,
-        loader: 'file-loader',
-      },
-    ],
-  },
-  postcss: function plugins(bundler) {
-    return [
-      require('postcss-import')({ addDependencyTo: bundler }),
-      require('precss')(),
-      require('autoprefixer')({
-        browsers: AUTOPREFIXER_BROWSERS,
+export function baseConfig({ debug, verbose, watch }) {
+  return {
+    output: {
+      path: path.join(__dirname, '../build'),
+      publicPath: '/',
+      sourcePrefix: '  ',
+    },
+    cache: false,
+    debug,
+    stats: {
+      colors: true,
+      reasons: debug,
+      hash: verbose,
+      version: verbose,
+      timings: true,
+      chunks: verbose,
+      chunkModules: verbose,
+      cached: verbose,
+      cachedAssets: verbose,
+    },
+    plugins: [
+      new webpack.optimize.OccurenceOrderPlugin(),
+      new webpack.DefinePlugin({
+        'process.env.NODE_ENV': debug ? '"development"' : '"production"',
+        '__DEV__': debug,
       }),
-    ];
-  },
-};
+    ],
+    module: {
+      loaders: [
+        {
+          test: /[\\\/]app\.js$/,
+          loader: path.join(__dirname, './lib/routes-loader.js'),
+        }, {
+          test: /\.json$/,
+          loader: 'json-loader',
+        }, {
+          test: /\.txt$/,
+          loader: 'raw-loader',
+        }, {
+          test: /\.(png|jpg|jpeg|gif|svg|woff|woff2)$/,
+          loader: 'url-loader?limit=10000',
+        }, {
+          test: /\.(eot|ttf|wav|mp3)$/,
+          loader: 'file-loader',
+        },
+      ],
+    },
+    postcss: function plugins(bundler) {
+      return [
+        require('postcss-import')({ addDependencyTo: bundler }),
+        require('precss')(),
+        require('autoprefixer')({
+          browsers: autoprefixerBrowsers,
+        }),
+      ];
+    },
+    resolve: {
+      extensions: ['', '.js', '.jsx', '.json']
+    }
+  };
+}
 
 // Configuration for the client-side bundle
-const appConfig = merge({}, config, {
-  entry: [
-    ...(WATCH ? ['webpack-hot-middleware/client'] : []),
-    './app.js',
-  ],
-  output: {
-    filename: 'app.js',
-  },
-  // http://webpack.github.io/docs/configuration.html#devtool
-  devtool: DEBUG ? 'cheap-module-eval-source-map' : false,
-  plugins: [
-    ...config.plugins,
-    ...(DEBUG ? [] : [
-      new webpack.optimize.DedupePlugin(),
-      new webpack.optimize.UglifyJsPlugin({
-        compress: {
-          warnings: VERBOSE,
-        },
-      }),
-      new webpack.optimize.AggressiveMergingPlugin(),
+export function appConfig(options) {
+  const { debug, watch } = options;
+  const config = baseConfig(options);
+
+  const devOptions = watch ? {
+    devServer: {
+      contentBase: './build'
+    }
+  } : null;
+
+  return _.merge({}, baseConfig(options), {
+    watch,
+    debug,
+
+    entry: _.compact([
+      watch ? 'webpack-hot-middleware/client' : null,
+      './app.js'
     ]),
-    ...(WATCH ? [
-      new webpack.HotModuleReplacementPlugin(),
-      new webpack.NoErrorsPlugin(),
-    ] : []),
-  ],
-  module: {
-    loaders: [
-      WATCH ? Object.assign({}, JS_LOADER, {
-        query: {
-          // Wraps all React components into arbitrary transforms
-          // https://github.com/gaearon/babel-plugin-react-transform
-          "plugins": [
-            ["react-transform", {
-              "transforms": [
-                {
-                  "transform": "react-transform-hmr",
-                  "imports": ["react"],
-                  "locals": ["module"]
-                }
-              ]
-            }]
-          ]
+
+    output: {
+      filename: 'app.js',
+    },
+    // http://webpack.github.io/docs/configuration.html#devtool
+    devtool: debug ? 'cheap-module-eval-source-map' : false,
+    plugins: [
+      ...config.plugins,
+      ...(debug ? [] : [
+        new webpack.optimize.DedupePlugin(),
+        new webpack.optimize.UglifyJsPlugin({
+          compress: {
+            warnings: verbose,
+          },
+        }),
+        new webpack.optimize.AggressiveMergingPlugin()
+      ]),
+      ...(watch ? [
+        new webpack.HotModuleReplacementPlugin(),
+        new webpack.NoErrorsPlugin()
+      ] : []),
+    ],
+    module: {
+      loaders: [
+        watch ? _.assign({}, jsLoader, {
+          query: {
+            // Wraps all React components into arbitrary transforms
+            // https://github.com/gaearon/babel-plugin-react-transform
+            "plugins": [
+              ["react-transform", {
+                "transforms": [
+                  {
+                    "transform": "react-transform-hmr",
+                    "imports": ["react"],
+                    "locals": ["module"]
+                  }
+                ]
+              }]
+            ]
+          },
+        }) : jsLoader,
+        ...config.module.loaders,
+        {
+          test: /\.scss$/,
+          loaders: ['style-loader', 'css-loader', 'postcss-loader']
+        }
+      ]
+    }
+  });
+}
+
+export function pagesConfig(options) {
+  const config = baseConfig(options);
+  return _.merge({}, config, {
+    entry: './app.js',
+    output: {
+      filename: 'app.node.js',
+      libraryTarget: 'commonjs2',
+    },
+    target: 'node',
+    node: {
+      console: false,
+      global: false,
+      process: false,
+      Buffer: false,
+      __filename: false,
+      __dirname: false,
+    },
+    externals: /^[a-z][a-z\.\-\/0-9]*$/i,
+    plugins: config.plugins.concat([
+      new webpack.optimize.LimitChunkCountPlugin({ maxChunks: 1 }),
+    ]),
+    module: {
+      loaders: [
+        jsLoader,
+        ...config.module.loaders,
+        {
+          test: /\.scss$/,
+          loaders: ['css-loader', 'postcss-loader'],
         },
-      }) : JS_LOADER,
-      ...config.module.loaders,
-      {
-        test: /\.scss$/,
-        loaders: ['style-loader', 'css-loader', 'postcss-loader'],
-      },
-    ],
-  },
-  resolve: {
-    extensions: ['', '.js', '.jsx', '.json']
-  }
-});
-
-// Configuration for server-side pre-rendering bundle
-const pagesConfig = merge({}, config, {
-  entry: './app.js',
-  output: {
-    filename: 'app.node.js',
-    libraryTarget: 'commonjs2',
-  },
-  target: 'node',
-  node: {
-    console: false,
-    global: false,
-    process: false,
-    Buffer: false,
-    __filename: false,
-    __dirname: false,
-  },
-  externals: /^[a-z][a-z\.\-\/0-9]*$/i,
-  plugins: config.plugins.concat([
-    new webpack.optimize.LimitChunkCountPlugin({ maxChunks: 1 }),
-  ]),
-  module: {
-    loaders: [
-      JS_LOADER,
-      ...config.module.loaders,
-      {
-        test: /\.scss$/,
-        loaders: ['css-loader', 'postcss-loader'],
-      },
-    ],
-  },
-  resolve: {
-    extensions: ['', '.js', '.jsx', '.json']
-  }
-});
-
-export default [appConfig, pagesConfig];
+      ],
+    }
+  })
+}
