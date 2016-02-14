@@ -5,7 +5,7 @@ import build from './build';
 // TODO: Update deployment URL
 const remote = {
   name: 'github',
-  url: 'https://github.com/{user}/{repo}.git',
+  url: 'https://github.com/azmenak/new-alliance-static.git',
   branch: 'gh-pages',
 };
 
