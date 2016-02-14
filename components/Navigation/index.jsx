@@ -13,7 +13,8 @@ export default class Navigation extends Component {
   render() {
     const navItems = [
       { href: '/', label: 'Home' },
-      { href: '/about', label: 'About' }
+      { href: '/about', label: 'About' },
+      { href: '/projects', label: 'Projects' }
     ];
 
     return (

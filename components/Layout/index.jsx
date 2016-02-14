@@ -4,21 +4,22 @@
  * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
  */
 
-import React, { PropTypes } from 'react';
+import React, { PropTypes, Component } from 'react';
 import './Layout.scss';
 import Navigation from '../Navigation';
 
-function Layout({ children }) {
-  return (
-    <div className="Layout">
-      <Navigation />
-      { children }
-    </div>
-  );
+export default class Layout extends Component {
+
+  static propTypes = {
+    children: PropTypes.element.isRequired,
+  }
+
+  render() {
+    return (
+      <div className="Layout">
+        <Navigation />
+        { this.props.children }
+      </div>
+    );
+  }
 }
-
-Layout.propTypes = {
-  children: PropTypes.element.isRequired,
-};
-
-export default Layout;

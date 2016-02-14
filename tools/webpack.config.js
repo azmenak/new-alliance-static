@@ -125,21 +125,17 @@ const appConfig = merge({}, config, {
         query: {
           // Wraps all React components into arbitrary transforms
           // https://github.com/gaearon/babel-plugin-react-transform
-          plugins: ['react-transform'],
-          extra: {
-            'react-transform': {
-              transforms: [
+          "plugins": [
+            ["react-transform", {
+              "transforms": [
                 {
-                  transform: 'react-transform-hmr',
-                  imports: ['react'],
-                  locals: ['module'],
-                }, {
-                  transform: 'react-transform-catch-errors',
-                  imports: ['react', 'redbox-react'],
-                },
-              ],
-            },
-          },
+                  "transform": "react-transform-hmr",
+                  "imports": ["react"],
+                  "locals": ["module"]
+                }
+              ]
+            }]
+          ]
         },
       }) : JS_LOADER,
       ...config.module.loaders,

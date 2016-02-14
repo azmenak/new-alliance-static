@@ -8,7 +8,7 @@ import React, { PropTypes } from 'react';
 import GoogleAnalytics from '../GoogleAnalytics';
 import config from '../../config';
 
-function Html({ title, description, body, debug }) {
+export default function Html({ title, description, body, debug }) {
   return (
     <html className="no-js" lang="">
       <head>
@@ -35,5 +35,3 @@ Html.propTypes = {
   body: PropTypes.string.isRequired,
   debug: PropTypes.bool.isRequired,
 };
-
-export default Html;
