@@ -1,9 +1,3 @@
-/**
- * React Static Boilerplate
- * https://github.com/koistya/react-static-boilerplate
- * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
- */
-
 import React, { Component } from 'react';
 import './Navigation.scss';
 import Link from '../Link';
@@ -14,7 +8,9 @@ export default class Navigation extends Component {
     const navItems = [
       { href: '/', label: 'Home' },
       { href: '/about', label: 'About' },
-      { href: '/projects', label: 'Projects' }
+      { href: '/projects', label: 'Projects' },
+      { href: '/contractors', label: 'Contractors' },
+      { href: '/contact', label: 'Contact' }
     ];
 
     return (

@@ -6,7 +6,7 @@
 
 import React, { PropTypes, Component } from 'react';
 import './Layout.scss';
-import Navigation from '../Navigation';
+import Header from '../Header';
 
 export default class Layout extends Component {
 
@@ -17,8 +17,10 @@ export default class Layout extends Component {
   render() {
     return (
       <div className="Layout">
-        <Navigation />
-        { this.props.children }
+        <Header />
+        <div className="body">
+          { this.props.children }
+        </div>
       </div>
     );
   }
