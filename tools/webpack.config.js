@@ -155,7 +155,11 @@ export function appConfig(options) {
         ...config.module.loaders,
         {
           test: /\.scss$/,
-          loaders: ['style-loader', 'css-loader', 'postcss-loader']
+          loaders: ['style', 'css', 'postcss']
+        },
+        {
+          test: /\.less/,
+          loaders: ['style', 'css', 'postcss', 'less']
         }
       ]
     }
@@ -191,9 +195,13 @@ export function pagesConfig(options) {
         ...config.module.loaders,
         {
           test: /\.scss$/,
-          loaders: ['css-loader', 'postcss-loader'],
+          loaders: ['css', 'postcss'],
         },
-      ],
+        {
+          test: /\.less/,
+          loaders: ['css', 'postcss', 'less']
+        }
+      ]
     }
   })
 }

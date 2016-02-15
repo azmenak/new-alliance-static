@@ -29,6 +29,7 @@
     "image-webpack-loader": "^1.6.3",
     "jimp": "^0.2.21",
     "json-loader": "^0.5.4",
+    "less": "^2.6.0",
     "less-loader": "^2.2.2",
     "lodash.merge": "^3.3.2",
     "markdown-loader": "^0.1.7",

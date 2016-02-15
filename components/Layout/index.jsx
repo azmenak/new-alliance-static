@@ -1,8 +1,4 @@
-/**
- * React Static Boilerplate
- * https://github.com/koistya/react-static-boilerplate
- * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
- */
+require('bootstrap/less/bootstrap.less');
 
 import React, { PropTypes, Component } from 'react';
 import './Layout.scss';
