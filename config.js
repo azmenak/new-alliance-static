@@ -1,11 +1,5 @@
-/**
- * React Static Boilerplate
- * https://github.com/koistya/react-static-boilerplate
- * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
- */
-
 export default {
-  title: 'React Static Boilerplate',
-  description: 'Static website generator for React.js web applications.',
+  title: 'New Alliance',
+  description: 'Quality Construction for Commercial and Residential Developments in Ontario',
   googleAnalyticsId: 'UA-XXXXX-X',
 };
