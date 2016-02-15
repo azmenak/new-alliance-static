@@ -1,4 +1,4 @@
-import 'bootstrap/less/bootstrap.less';
+import './bootstrap.less';
 
 import React, { PropTypes, Component } from 'react';
 import './Layout.scss';
