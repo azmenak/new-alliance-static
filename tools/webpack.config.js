@@ -158,7 +158,7 @@ export function appConfig(options) {
           loaders: ['style', 'css', 'postcss']
         },
         {
-          test: /\.less/,
+          test: /\.less$/,
           loaders: ['style', 'css', 'postcss', 'less']
         }
       ]
@@ -198,7 +198,7 @@ export function pagesConfig(options) {
           loaders: ['css', 'postcss'],
         },
         {
-          test: /\.less/,
+          test: /\.less$/,
           loaders: ['css', 'postcss', 'less']
         }
       ]
