@@ -1,3 +1,5 @@
+import 'bootstrap/less/bootstrap.less';
+
 import React, { PropTypes, Component } from 'react';
 import './Layout.scss';
 import Header from '../Header';
