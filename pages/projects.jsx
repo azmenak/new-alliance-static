@@ -15,6 +15,12 @@ export default class Projects extends Component {
 
         <div className="past-projects">
           <h2>Past Projects</h2>
+
+          {_.map(projectImages, project =>
+            <div className="project" key={project.name}>
+              <h3>{ project.name }</h3>
+            </div>
+          )}
         </div>
       </Grid>
     );

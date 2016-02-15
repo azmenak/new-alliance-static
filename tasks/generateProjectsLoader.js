@@ -1,11 +1,10 @@
-import qs from 'qs';
 import _ from 'lodash';
 import fs from 'fs-extra-promise';
 import path from 'path';
 
 export default function generateJSfile() {
-  const sizes = { sizes: ['300w', '600w'] };
-  const sizesString = qs.stringify(sizes, { arrayformat: 'brackets', encode: false });
+  const sizes = ['300w', '600w'];
+  const sizesString = _.map(sizes, s => `sizes[]=${s}`).join('&');
   const projectsDir = path.join(__dirname, '..', 'images', 'projects');
   const projectPaths = fs.readdirSync(projectsDir).filter(file => fs.statSync(path.join(projectsDir, file)).isDirectory());
 
@@ -34,9 +33,10 @@ export default function generateJSfile() {
         '  images: [' +
         p.images.map(img => {
           return '{\n' +
-            `    responsive: require('${img.responsivePath}'),\n` +
+            `    responsive: JSON.parse(require('${img.responsivePath}')),\n` +
             `    image: require('${img.webpackImgPath}'),\n` +
-            `    path: '${img.webpackImgPath}'\n`
+            `    path: '${img.imagePath}',\n` +
+            `    sizes: '${sizes.join(",")}'\n`
           + '  }'
         }).join(', ') +
           ']\n'
