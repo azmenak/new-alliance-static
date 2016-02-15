@@ -1,24 +1,49 @@
 import qs from 'qs';
 import _ from 'lodash';
+import fs from 'fs-extra-promise';
+import path from 'path';
 
-const projects = [];
+export default function generateJSfile() {
+  const sizes = { sizes: ['300w', '600w'] };
+  const sizesString = qs.stringify(sizes, { arrayformat: 'brackets', encode: false });
+  const projectsDir = path.join(__dirname, '..', 'images', 'projects');
+  const projectPaths = fs.readdirSync(projectsDir).filter(file => fs.statSync(path.join(projectsDir, file)).isDirectory());
 
-const projectimages = _.map(projects, project => {
-  return _.assign({}, project, { images: _.map(_.range(project.count), i => {
-    const sizes = { sizes: ['300w', '600w'] };
-    const sizesstring = qs.stringify(sizes, { arrayformat: 'brackets' });
-    const path = `../images/projects/${project.path}/originals/${i}.jpg`;
-    const responsive = `image-webpack!resize-image?${sizesstring}!${path}`;
-    const img = `image-webpack!${path}`;
-    return {
-      index: i,
-      responsive,
-      img,
-      size: sizes.sizes.join(',')
-    }
-  })})
-});
+  const projectimages = _.map(projectPaths, project => {
+    const folder = path.join(projectsDir, project);
+    const config = fs.readJSONSync(path.join(folder, 'config.json'));
 
-export default generateJSfile() {
-  // make things
+    const images = fs.readdirSync(path.join(folder, 'web')).filter(file => /\.jpg$/i.test(file));
+    return _.assign({}, config, { images: images.map(image => {
+      const imagePath = `../images/projects/${project}/web/${image}`;
+      const responsivePath = `image-webpack!resize-image?${sizesString}!${imagePath}`;
+      const webpackImgPath = `image-webpack!${imagePath}`;
+      return {
+        responsivePath,
+        webpackImgPath,
+        imagePath,
+      }
+    })})
+  });
+
+  const staticFile = 'export default [\n' +
+    projectimages.map(p => {
+      return '{\n' +
+        `  name: '${p.name}',\n` +
+        `  year: ${p.year},\n` +
+        '  images: [' +
+        p.images.map(img => {
+          return '{\n' +
+            `    responsive: require('${img.responsivePath}'),\n` +
+            `    image: require('${img.webpackImgPath}'),\n` +
+            `    path: '${img.webpackImgPath}'\n`
+          + '  }'
+        }).join(', ') +
+          ']\n'
+      + '}'
+    }).join(', ')
+  + ']';
+
+  fs.outputFileSync(path.join(__dirname, '..', 'lib', 'projectImages.js'), staticFile, 'utf8');
+  console.log('Much success');
 }

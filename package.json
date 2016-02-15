@@ -12,6 +12,7 @@
     "babel-preset-react": "^6.3.13",
     "babel-preset-stage-0": "^6.3.13",
     "babel-register": "^6.3.13",
+    "bluebird": "^3.3.1",
     "browser-sync": "^2.9.11",
     "chai": "^3.4.0",
     "css-loader": "^0.21.0",
@@ -22,6 +23,7 @@
     "extract-loader": "0.0.1",
     "fbjs": "^0.4.0",
     "file-loader": "^0.8.4",
+    "fs-extra-promise": "^0.3.1",
     "git-repository": "^0.1.1",
     "glob": "^5.0.15",
     "gm": "^1.21.1",
@@ -64,7 +66,8 @@
     "clean": "babel-node --eval \"require('./tools/clean').default().catch(err => console.log(err.stack))\"",
     "build": "babel-node --eval \"require('./tools/build').default().catch(err => console.log(err.stack))\"",
     "start": "babel-node --eval \"require('./tools/start').default().catch(err => console.log(err.stack))\"",
-    "deploy": "babel-node --eval \"require('./tools/deploy').default().catch(err => console.log(err.stack))\""
+    "deploy": "babel-node --eval \"require('./tools/deploy').default().catch(err => console.log(err.stack))\"",
+    "generate-projects": "babel-node --eval \"require('./tasks/generateProjectsLoader').default()\""
   },
   "dependencies": {
     "bootstrap": "^3.3.6",
