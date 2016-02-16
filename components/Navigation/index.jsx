@@ -21,7 +21,11 @@ export default class Navigation extends Component {
           </li>
         ) }
         <li className="typeform-link">
-          <Typeform />
+          <a
+            className="btn btn-primary"
+            href="https://adamzmenak.typeform.com/to/H2CxU0"
+            target="_blank"
+          >Contact Us</a>
         </li>
       </ul>
     );
