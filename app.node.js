@@ -660,7 +660,15 @@ module.exports =
           _react2.default.createElement(
             'li',
             { className: 'typeform-link' },
-            _react2.default.createElement(_Typeform2.default, null)
+            _react2.default.createElement(
+              'a',
+              {
+                className: 'btn btn-primary',
+                href: 'https://adamzmenak.typeform.com/to/H2CxU0',
+                target: '_blank'
+              },
+              'Contact Us'
+            )
           )
         );
       }
