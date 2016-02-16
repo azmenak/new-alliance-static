@@ -1,10 +1,5 @@
-/**
- * React Static Boilerplate
- * https://github.com/koistya/react-static-boilerplate
- * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
- */
-
 import React, { Component } from 'react';
+import Typeform from './contact/Typeform';
 
 export default class Contact extends Component {
 
@@ -12,7 +7,7 @@ export default class Contact extends Component {
     return (
       <div>
         <h1>Contact Us</h1>
-        <p>Coming soon-ish.</p>
+        <Typeform />
       </div>
     );
   }

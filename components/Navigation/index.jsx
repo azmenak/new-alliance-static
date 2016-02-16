@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Navigation.scss';
 import Link from '../Link';
 import _ from 'lodash';
+import Typeform from '../../pages/contact/Typeform';
 
 export default class Navigation extends Component {
   render() {
@@ -9,8 +10,7 @@ export default class Navigation extends Component {
       { href: '/', label: 'Home' },
       { href: '/about', label: 'About' },
       { href: '/projects', label: 'Projects' },
-      { href: '/contractors', label: 'Contractors' },
-      { href: '/contact', label: 'Contact' }
+      { href: '/contractors', label: 'Contractors' }
     ];
 
     return (
@@ -20,6 +20,9 @@ export default class Navigation extends Component {
             <Link to={item.href}><span>{ item.label }</span></Link>
           </li>
         ) }
+        <li className="typeform-link">
+          <Typeform />
+        </li>
       </ul>
     );
   }
