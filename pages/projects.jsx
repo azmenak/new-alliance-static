@@ -1,7 +1,7 @@
 import './projects/projects.scss';
 
 import React, { Component } from 'react';
-import { Grid, Row, Col, PageHeader } from 'react-bootstrap';
+import { Grid, PageHeader } from 'react-bootstrap';
 import _ from 'lodash';
 
 import projectImages from '../lib/projectImages';
@@ -21,7 +21,7 @@ export default class Projects extends Component {
             <div className="project" key={project.name}>
               <h3>
                 <div className="bg-text">
-                  { poroject.name } <small className="year">({ project.year })</small>
+                  { project.name } <small className="year">({ project.year })</small>
                 </div>
               </h3>
               <div className='img-col'>
