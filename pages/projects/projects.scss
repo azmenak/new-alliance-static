@@ -1,3 +1,26 @@
+@import '../../components/variables';
+
 .img-col {
   columns: 2;
+
+  @media (max-width: $screen-sm-min) {
+    columns: 1;
+  }
+}
+
+.project {
+  margin: 3rem 0;
+
+  .bg-text {
+    background-color: #333;
+    color: #fff;
+    display: inline-block;
+    padding: 1rem;
+  }
+
+  h3 {
+    small {
+      font-size: .5em;
+    }
+  }
 }

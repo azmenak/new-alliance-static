@@ -19,14 +19,18 @@ export default class Projects extends Component {
 
           {_.map(projectImages, project =>
             <div className="project" key={project.name}>
-              <h3>{ project.name }</h3>
+              <h3>
+                <div className="bg-text">
+                  { project.name } <small className="year">({ project.year })</small>
+                </div>
+              </h3>
               <div className='img-col'>
               {_.map(project.images, image =>
                 <img
+                  className="max-width m-b-1"
+                  sizes={image.sizes}
                   src={image.image}
                   srcSet={image.responsive.srcset}
-                  sizes={image.sizes}
-                  className="max-width m-b"
                 />
               )}
             </div>
