@@ -55,7 +55,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  var _reactDom = __webpack_require__(129);
+  var _reactDom = __webpack_require__(131);
 
   var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -261,15 +261,15 @@ module.exports =
 
   var _ExecutionEnvironment = __webpack_require__(7);
 
-  var _createBrowserHistory = __webpack_require__(126);
+  var _createBrowserHistory = __webpack_require__(128);
 
   var _createBrowserHistory2 = _interopRequireDefault(_createBrowserHistory);
 
-  var _createMemoryHistory = __webpack_require__(127);
+  var _createMemoryHistory = __webpack_require__(129);
 
   var _createMemoryHistory2 = _interopRequireDefault(_createMemoryHistory);
 
-  var _useQueries = __webpack_require__(128);
+  var _useQueries = __webpack_require__(130);
 
   var _useQueries2 = _interopRequireDefault(_useQueries);
 
@@ -371,8 +371,8 @@ module.exports =
 
   function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-  var logoResponsiveJSON = __webpack_require__(78);
-  var logoImg = __webpack_require__(79);
+  var logoResponsiveJSON = __webpack_require__(79);
+  var logoImg = __webpack_require__(80);
 
   var Header = function (_Component) {
     _inherits(Header, _Component);
@@ -703,48 +703,48 @@ module.exports =
     name: 'Barton Watermain City of Hamilton',
     year: 2013,
     images: [{
-      responsive: JSON.parse(__webpack_require__(32)),
-      image: __webpack_require__(80),
-      path: '../images/projects/barton/web/barton-1.jpg',
-      sizes: '300w,600w'
-    }, {
       responsive: JSON.parse(__webpack_require__(33)),
       image: __webpack_require__(81),
-      path: '../images/projects/barton/web/barton-2.jpg',
+      path: '../images/projects/barton/web/barton-1.jpg',
       sizes: '300w,600w'
     }, {
       responsive: JSON.parse(__webpack_require__(34)),
       image: __webpack_require__(82),
-      path: '../images/projects/barton/web/barton-3.jpg',
+      path: '../images/projects/barton/web/barton-2.jpg',
       sizes: '300w,600w'
     }, {
       responsive: JSON.parse(__webpack_require__(35)),
       image: __webpack_require__(83),
-      path: '../images/projects/barton/web/barton-4.jpg',
+      path: '../images/projects/barton/web/barton-3.jpg',
       sizes: '300w,600w'
     }, {
       responsive: JSON.parse(__webpack_require__(36)),
       image: __webpack_require__(84),
-      path: '../images/projects/barton/web/barton-5.jpg',
+      path: '../images/projects/barton/web/barton-4.jpg',
       sizes: '300w,600w'
     }, {
       responsive: JSON.parse(__webpack_require__(37)),
       image: __webpack_require__(85),
-      path: '../images/projects/barton/web/barton-6.jpg',
+      path: '../images/projects/barton/web/barton-5.jpg',
       sizes: '300w,600w'
     }, {
       responsive: JSON.parse(__webpack_require__(38)),
       image: __webpack_require__(86),
-      path: '../images/projects/barton/web/barton-7.jpg',
+      path: '../images/projects/barton/web/barton-6.jpg',
       sizes: '300w,600w'
     }, {
       responsive: JSON.parse(__webpack_require__(39)),
       image: __webpack_require__(87),
-      path: '../images/projects/barton/web/barton-8.jpg',
+      path: '../images/projects/barton/web/barton-7.jpg',
       sizes: '300w,600w'
     }, {
       responsive: JSON.parse(__webpack_require__(40)),
       image: __webpack_require__(88),
+      path: '../images/projects/barton/web/barton-8.jpg',
+      sizes: '300w,600w'
+    }, {
+      responsive: JSON.parse(__webpack_require__(41)),
+      image: __webpack_require__(89),
       path: '../images/projects/barton/web/barton-9.jpg',
       sizes: '300w,600w'
     }]
@@ -752,48 +752,48 @@ module.exports =
     name: 'Centennial Parkway City of Hamilton',
     year: 2014,
     images: [{
-      responsive: JSON.parse(__webpack_require__(41)),
-      image: __webpack_require__(89),
-      path: '../images/projects/centennial/web/centennial-1.jpg',
-      sizes: '300w,600w'
-    }, {
       responsive: JSON.parse(__webpack_require__(42)),
       image: __webpack_require__(90),
-      path: '../images/projects/centennial/web/centennial-2.jpg',
+      path: '../images/projects/centennial/web/centennial-1.jpg',
       sizes: '300w,600w'
     }, {
       responsive: JSON.parse(__webpack_require__(43)),
       image: __webpack_require__(91),
-      path: '../images/projects/centennial/web/centennial-3.jpg',
+      path: '../images/projects/centennial/web/centennial-2.jpg',
       sizes: '300w,600w'
     }, {
       responsive: JSON.parse(__webpack_require__(44)),
       image: __webpack_require__(92),
-      path: '../images/projects/centennial/web/centennial-4.jpg',
+      path: '../images/projects/centennial/web/centennial-3.jpg',
       sizes: '300w,600w'
     }, {
       responsive: JSON.parse(__webpack_require__(45)),
       image: __webpack_require__(93),
-      path: '../images/projects/centennial/web/centennial-5.jpg',
+      path: '../images/projects/centennial/web/centennial-4.jpg',
       sizes: '300w,600w'
     }, {
       responsive: JSON.parse(__webpack_require__(46)),
       image: __webpack_require__(94),
-      path: '../images/projects/centennial/web/centennial-6.jpg',
+      path: '../images/projects/centennial/web/centennial-5.jpg',
       sizes: '300w,600w'
     }, {
       responsive: JSON.parse(__webpack_require__(47)),
       image: __webpack_require__(95),
-      path: '../images/projects/centennial/web/centennial-7.jpg',
+      path: '../images/projects/centennial/web/centennial-6.jpg',
       sizes: '300w,600w'
     }, {
       responsive: JSON.parse(__webpack_require__(48)),
       image: __webpack_require__(96),
-      path: '../images/projects/centennial/web/centennial-8.jpg',
+      path: '../images/projects/centennial/web/centennial-7.jpg',
       sizes: '300w,600w'
     }, {
       responsive: JSON.parse(__webpack_require__(49)),
       image: __webpack_require__(97),
+      path: '../images/projects/centennial/web/centennial-8.jpg',
+      sizes: '300w,600w'
+    }, {
+      responsive: JSON.parse(__webpack_require__(50)),
+      image: __webpack_require__(98),
       path: '../images/projects/centennial/web/centennial-9.jpg',
       sizes: '300w,600w'
     }]
@@ -801,53 +801,53 @@ module.exports =
     name: 'Derry Road Underpass Region of Halton',
     year: 2014,
     images: [{
-      responsive: JSON.parse(__webpack_require__(50)),
-      image: __webpack_require__(98),
-      path: '../images/projects/derry/web/derry-1.jpg',
-      sizes: '300w,600w'
-    }, {
       responsive: JSON.parse(__webpack_require__(51)),
       image: __webpack_require__(99),
-      path: '../images/projects/derry/web/derry-10.jpg',
+      path: '../images/projects/derry/web/derry-1.jpg',
       sizes: '300w,600w'
     }, {
       responsive: JSON.parse(__webpack_require__(52)),
       image: __webpack_require__(100),
-      path: '../images/projects/derry/web/derry-2.jpg',
+      path: '../images/projects/derry/web/derry-10.jpg',
       sizes: '300w,600w'
     }, {
       responsive: JSON.parse(__webpack_require__(53)),
       image: __webpack_require__(101),
-      path: '../images/projects/derry/web/derry-3.jpg',
+      path: '../images/projects/derry/web/derry-2.jpg',
       sizes: '300w,600w'
     }, {
       responsive: JSON.parse(__webpack_require__(54)),
       image: __webpack_require__(102),
-      path: '../images/projects/derry/web/derry-4.jpg',
+      path: '../images/projects/derry/web/derry-3.jpg',
       sizes: '300w,600w'
     }, {
       responsive: JSON.parse(__webpack_require__(55)),
       image: __webpack_require__(103),
-      path: '../images/projects/derry/web/derry-5.jpg',
+      path: '../images/projects/derry/web/derry-4.jpg',
       sizes: '300w,600w'
     }, {
       responsive: JSON.parse(__webpack_require__(56)),
       image: __webpack_require__(104),
-      path: '../images/projects/derry/web/derry-6.jpg',
+      path: '../images/projects/derry/web/derry-5.jpg',
       sizes: '300w,600w'
     }, {
       responsive: JSON.parse(__webpack_require__(57)),
       image: __webpack_require__(105),
-      path: '../images/projects/derry/web/derry-7.jpg',
+      path: '../images/projects/derry/web/derry-6.jpg',
       sizes: '300w,600w'
     }, {
       responsive: JSON.parse(__webpack_require__(58)),
       image: __webpack_require__(106),
-      path: '../images/projects/derry/web/derry-8.jpg',
+      path: '../images/projects/derry/web/derry-7.jpg',
       sizes: '300w,600w'
     }, {
       responsive: JSON.parse(__webpack_require__(59)),
       image: __webpack_require__(107),
+      path: '../images/projects/derry/web/derry-8.jpg',
+      sizes: '300w,600w'
+    }, {
+      responsive: JSON.parse(__webpack_require__(60)),
+      image: __webpack_require__(108),
       path: '../images/projects/derry/web/derry-9.jpg',
       sizes: '300w,600w'
     }]
@@ -855,38 +855,38 @@ module.exports =
     name: 'King Road Underpass City of Hamilton',
     year: 2013,
     images: [{
-      responsive: JSON.parse(__webpack_require__(60)),
-      image: __webpack_require__(108),
-      path: '../images/projects/king/web/king-1.jpg',
-      sizes: '300w,600w'
-    }, {
       responsive: JSON.parse(__webpack_require__(61)),
       image: __webpack_require__(109),
-      path: '../images/projects/king/web/king-2.jpg',
+      path: '../images/projects/king/web/king-1.jpg',
       sizes: '300w,600w'
     }, {
       responsive: JSON.parse(__webpack_require__(62)),
       image: __webpack_require__(110),
-      path: '../images/projects/king/web/king-3.jpg',
+      path: '../images/projects/king/web/king-2.jpg',
       sizes: '300w,600w'
     }, {
       responsive: JSON.parse(__webpack_require__(63)),
       image: __webpack_require__(111),
-      path: '../images/projects/king/web/king-4.jpg',
+      path: '../images/projects/king/web/king-3.jpg',
       sizes: '300w,600w'
     }, {
       responsive: JSON.parse(__webpack_require__(64)),
       image: __webpack_require__(112),
-      path: '../images/projects/king/web/king-5.jpg',
+      path: '../images/projects/king/web/king-4.jpg',
       sizes: '300w,600w'
     }, {
       responsive: JSON.parse(__webpack_require__(65)),
       image: __webpack_require__(113),
-      path: '../images/projects/king/web/king-6.jpg',
+      path: '../images/projects/king/web/king-5.jpg',
       sizes: '300w,600w'
     }, {
       responsive: JSON.parse(__webpack_require__(66)),
       image: __webpack_require__(114),
+      path: '../images/projects/king/web/king-6.jpg',
+      sizes: '300w,600w'
+    }, {
+      responsive: JSON.parse(__webpack_require__(67)),
+      image: __webpack_require__(115),
       path: '../images/projects/king/web/king-7.jpg',
       sizes: '300w,600w'
     }]
@@ -894,58 +894,58 @@ module.exports =
     name: 'TTC York University Station (WALSH)',
     year: 2014,
     images: [{
-      responsive: JSON.parse(__webpack_require__(67)),
-      image: __webpack_require__(115),
-      path: '../images/projects/ttc/web/ttc-1.jpg',
-      sizes: '300w,600w'
-    }, {
       responsive: JSON.parse(__webpack_require__(68)),
       image: __webpack_require__(116),
-      path: '../images/projects/ttc/web/ttc-10.jpg',
+      path: '../images/projects/ttc/web/ttc-1.jpg',
       sizes: '300w,600w'
     }, {
       responsive: JSON.parse(__webpack_require__(69)),
       image: __webpack_require__(117),
-      path: '../images/projects/ttc/web/ttc-11.jpg',
+      path: '../images/projects/ttc/web/ttc-10.jpg',
       sizes: '300w,600w'
     }, {
       responsive: JSON.parse(__webpack_require__(70)),
       image: __webpack_require__(118),
-      path: '../images/projects/ttc/web/ttc-2.jpg',
+      path: '../images/projects/ttc/web/ttc-11.jpg',
       sizes: '300w,600w'
     }, {
       responsive: JSON.parse(__webpack_require__(71)),
       image: __webpack_require__(119),
-      path: '../images/projects/ttc/web/ttc-3.jpg',
+      path: '../images/projects/ttc/web/ttc-2.jpg',
       sizes: '300w,600w'
     }, {
       responsive: JSON.parse(__webpack_require__(72)),
       image: __webpack_require__(120),
-      path: '../images/projects/ttc/web/ttc-4.jpg',
+      path: '../images/projects/ttc/web/ttc-3.jpg',
       sizes: '300w,600w'
     }, {
       responsive: JSON.parse(__webpack_require__(73)),
       image: __webpack_require__(121),
-      path: '../images/projects/ttc/web/ttc-5.jpg',
+      path: '../images/projects/ttc/web/ttc-4.jpg',
       sizes: '300w,600w'
     }, {
       responsive: JSON.parse(__webpack_require__(74)),
       image: __webpack_require__(122),
-      path: '../images/projects/ttc/web/ttc-6.jpg',
+      path: '../images/projects/ttc/web/ttc-5.jpg',
       sizes: '300w,600w'
     }, {
       responsive: JSON.parse(__webpack_require__(75)),
       image: __webpack_require__(123),
-      path: '../images/projects/ttc/web/ttc-7.jpg',
+      path: '../images/projects/ttc/web/ttc-6.jpg',
       sizes: '300w,600w'
     }, {
       responsive: JSON.parse(__webpack_require__(76)),
       image: __webpack_require__(124),
-      path: '../images/projects/ttc/web/ttc-8.jpg',
+      path: '../images/projects/ttc/web/ttc-7.jpg',
       sizes: '300w,600w'
     }, {
       responsive: JSON.parse(__webpack_require__(77)),
       image: __webpack_require__(125),
+      path: '../images/projects/ttc/web/ttc-8.jpg',
+      sizes: '300w,600w'
+    }, {
+      responsive: JSON.parse(__webpack_require__(78)),
+      image: __webpack_require__(126),
       path: '../images/projects/ttc/web/ttc-9.jpg',
       sizes: '300w,600w'
     }]
@@ -1512,9 +1512,9 @@ module.exports =
 
   function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-  var hsManual = __webpack_require__(29);
-  var hsStandards = __webpack_require__(30);
-  var hsAck = __webpack_require__(31);
+  var hsManual = __webpack_require__(30);
+  var hsStandards = __webpack_require__(31);
+  var hsAck = __webpack_require__(32);
 
   var Contractors = function (_Component) {
     _inherits(Contractors, _Component);
@@ -1603,7 +1603,11 @@ module.exports =
     value: true
   });
 
+  var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
   var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+  __webpack_require__(28);
 
   var _react = __webpack_require__(1);
 
@@ -1619,6 +1623,8 @@ module.exports =
 
   function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+  var derryRoadAdj = __webpack_require__(127);
+
   var _class = function (_Component) {
     _inherits(_class, _Component);
 
@@ -1632,95 +1638,112 @@ module.exports =
       key: 'render',
       value: function render() {
         return _react2.default.createElement(
-          _reactBootstrap.Grid,
-          { className: 'body-component' },
+          'div',
+          { className: 'home-page' },
           _react2.default.createElement(
-            _reactBootstrap.PageHeader,
-            { className: 'headline' },
-            'New-Alliance',
-            _react2.default.createElement('br', null),
+            'div',
+            { className: 'hero-container' },
+            _react2.default.createElement('img', _extends({ className: 'max-width hero-img' }, derryRoadAdj)),
             _react2.default.createElement(
-              'small',
-              null,
-              'Quality Construction for Commercial and Residential Developments in Ontario'
+              'div',
+              { className: 'headline page-heaader' },
+              _react2.default.createElement(
+                _reactBootstrap.Grid,
+                null,
+                _react2.default.createElement(
+                  'h1',
+                  null,
+                  'New-Alliance',
+                  _react2.default.createElement('br', null),
+                  _react2.default.createElement(
+                    'small',
+                    null,
+                    'Quality Construction for Commercial and Residential Developments in Ontario'
+                  )
+                )
+              )
             )
           ),
           _react2.default.createElement(
-            'p',
-            null,
-            'At New-Alliance, we specialize in providing state-of-the-art Construction services for commercial, residential and municipal projects, on time and on budget. Whether you need a commercial building developed, a real estate property constructed or a city block designed, we have a solution for you. Our team of professionals is committed to working with you to develop a customized solution for your development at a competitive price.'
-          ),
-          _react2.default.createElement(
-            _reactBootstrap.PageHeader,
-            { className: 'headline', id: 'about' },
-            'About Us'
-          ),
-          _react2.default.createElement(
-            'h3',
-            null,
-            'A Construction Company with A Difference'
-          ),
-          _react2.default.createElement(
-            'p',
-            null,
-            'Rather than bringing together a group of random contract workers like many other construction companies do, we’ve taken the time to seek qualified and trained professionals to join our staff. With expertise in construction, concrete works, bridge work, sewage, watermain and road work, our team will provide customized development that will exceed your expectations. Our staff has been together for several years and is dedicated to the success of each project we handle. With our exceptional customer service and on-time delivery, we have built a strong reputation of quality and integrity serving our clients.'
-          ),
-          _react2.default.createElement(
-            'h3',
-            null,
-            'Commercial & Residential Construction and Development Services'
-          ),
-          _react2.default.createElement(
-            'p',
-            null,
-            'We offer a wide range of construction services to suit every construction need including: Commercial developments, Public Road Reconstructions including all underground utilities, Bridge Structures and Residential Site Servicing. Together, we will work with you to understand your needs and come up with a project plan based on your timelines and budget.'
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'what-to-expect' },
+            _reactBootstrap.Grid,
+            { className: 'body-component' },
             _react2.default.createElement(
-              'ul',
+              'p',
               null,
-              _react2.default.createElement(
-                'li',
-                null,
-                'We will meet with you for a free consultation to discuss your goals and understand your vision'
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                'Based on your budget, timelines and requirements, we will provide you with a free estimate as well as a general project plan designed to meet your needs'
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                'We will share our design and architecture expertise with you to ensure your development reaches its full aesthetic potential'
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                'Our team will commit to the project launch date and will work diligently to complete the construction on time'
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                'We will provide you with regular project updates, so you have peace of mind assured that we will deliver on time'
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                'Our clean-up crew will dispose of waste in a safe manner and ensure the site is clean during and after the job'
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                'To make sure you are satisfied with our services, we will follow up with you after the project is complete to collect your feedback'
-              )
+              'At New-Alliance, we specialize in providing state-of-the-art Construction services for commercial, residential and municipal projects, on time and on budget. Whether you need a commercial building developed, a real estate property constructed or a city block designed, we have a solution for you. Our team of professionals is committed to working with you to develop a customized solution for your development at a competitive price.'
+            ),
+            _react2.default.createElement(
+              _reactBootstrap.PageHeader,
+              { className: 'headline', id: 'about' },
+              'About Us'
+            ),
+            _react2.default.createElement(
+              'h3',
+              null,
+              'A Construction Company with A Difference'
             ),
             _react2.default.createElement(
               'p',
               null,
-              'A well-developed construction project for your commercial building or residential property doesn’t have to be costly or stressful. By working with a trusted company that has years of construction experience backed by a second-to-none reputation for quality, you will ensure your development is skillfully handled. Trust New-Alliance to deliver your next project to your complete satisfaction.'
+              'Rather than bringing together a group of random contract workers like many other construction companies do, we’ve taken the time to seek qualified and trained professionals to join our staff. With expertise in construction, concrete works, bridge work, sewage, watermain and road work, our team will provide customized development that will exceed your expectations. Our staff has been together for several years and is dedicated to the success of each project we handle. With our exceptional customer service and on-time delivery, we have built a strong reputation of quality and integrity serving our clients.'
+            ),
+            _react2.default.createElement(
+              'h3',
+              null,
+              'Commercial & Residential Construction and Development Services'
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              'We offer a wide range of construction services to suit every construction need including: Commercial developments, Public Road Reconstructions including all underground utilities, Bridge Structures and Residential Site Servicing. Together, we will work with you to understand your needs and come up with a project plan based on your timelines and budget.'
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'what-to-expect' },
+              _react2.default.createElement(
+                'ul',
+                null,
+                _react2.default.createElement(
+                  'li',
+                  null,
+                  'We will meet with you for a free consultation to discuss your goals and understand your vision'
+                ),
+                _react2.default.createElement(
+                  'li',
+                  null,
+                  'Based on your budget, timelines and requirements, we will provide you with a free estimate as well as a general project plan designed to meet your needs'
+                ),
+                _react2.default.createElement(
+                  'li',
+                  null,
+                  'We will share our design and architecture expertise with you to ensure your development reaches its full aesthetic potential'
+                ),
+                _react2.default.createElement(
+                  'li',
+                  null,
+                  'Our team will commit to the project launch date and will work diligently to complete the construction on time'
+                ),
+                _react2.default.createElement(
+                  'li',
+                  null,
+                  'We will provide you with regular project updates, so you have peace of mind assured that we will deliver on time'
+                ),
+                _react2.default.createElement(
+                  'li',
+                  null,
+                  'Our clean-up crew will dispose of waste in a safe manner and ensure the site is clean during and after the job'
+                ),
+                _react2.default.createElement(
+                  'li',
+                  null,
+                  'To make sure you are satisfied with our services, we will follow up with you after the project is complete to collect your feedback'
+                )
+              ),
+              _react2.default.createElement(
+                'p',
+                null,
+                'A well-developed construction project for your commercial building or residential property doesn’t have to be costly or stressful. By working with a trusted company that has years of construction experience backed by a second-to-none reputation for quality, you will ensure your development is skillfully handled. Trust New-Alliance to deliver your next project to your complete satisfaction.'
+              )
             )
           )
         );
@@ -1744,7 +1767,7 @@ module.exports =
 
   var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-  __webpack_require__(28);
+  __webpack_require__(29);
 
   var _react = __webpack_require__(1);
 
@@ -1850,7 +1873,7 @@ module.exports =
 
 
   // module
-  exports.push([module.id, ".top-bar {\n  margin-top: 2rem; }\n  .top-bar .logo {\n    max-width: 18rem; }\n  .top-bar .cta-call-us {\n    float: right; }\n", ""]);
+  exports.push([module.id, "/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n.top-bar {\n  margin-top: 2rem; }\n  .top-bar .logo {\n    max-width: 18rem; }\n  .top-bar .cta-call-us {\n    float: right;\n    margin-top: 1rem; }\n    @media (max-width: 768px) {\n      .top-bar .cta-call-us {\n        float: none;\n        line-height: .5;\n        margin-top: 2rem;\n        text-align: center; } }\n", ""]);
 
   // exports
 
@@ -1864,7 +1887,7 @@ module.exports =
 
 
   // module
-  exports.push([module.id, "/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\nhtml, body {\n  background-color: #f7f7f7;\n  color: #333;\n  font-family: \"Roboto\", \"Helvetica\", sans-serif;\n  margin: 0;\n  padding: 0; }\n\n.max-width {\n  max-width: 100%; }\n\n.Layout {\n  margin: 0 auto; }\n\n@media (min-width: 768px) {\n  .Layout {\n    width: calc($screen-sm-min - 18px); } }\n\n@media (min-width: 992px) {\n  .Layout {\n    width: calc($screen-md-min - 22px); } }\n\n@media (min-width: 1200px) {\n  .Layout {\n    width: calc($screen-lg-min - 30px); } }\n", ""]);
+  exports.push([module.id, "/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\nhtml, body {\n  background-color: #f7f7f7;\n  color: #333;\n  font-family: \"Helvetica\", sans-serif;\n  margin: 0;\n  padding: 0; }\n\n.max-width {\n  max-width: 100%; }\n\n.Layout {\n  margin: 0 auto; }\n\n@media (min-width: 768px) {\n  .Layout {\n    width: calc($screen-sm-min - 18px); } }\n\n@media (min-width: 992px) {\n  .Layout {\n    width: calc($screen-md-min - 22px); } }\n\n@media (min-width: 1200px) {\n  .Layout {\n    width: calc($screen-lg-min - 30px); } }\n", ""]);
 
   // exports
 
@@ -1906,7 +1929,7 @@ module.exports =
 
 
   // module
-  exports.push([module.id, "/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n.navigation {\n  clear: both;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n  -webkit-flex-direction: row;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  -webkit-flex-wrap: wrap;\n      -ms-flex-wrap: wrap;\n          flex-wrap: wrap;\n  -webkit-box-pack: end;\n  -webkit-justify-content: flex-end;\n      -ms-flex-pack: end;\n          justify-content: flex-end;\n  list-style: none;\n  margin: 0;\n  padding: 2rem 0; }\n", ""]);
+  exports.push([module.id, "/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n.navigation {\n  clear: both;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n  -webkit-flex-direction: row;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  -webkit-flex-wrap: wrap;\n      -ms-flex-wrap: wrap;\n          flex-wrap: wrap;\n  -webkit-box-pack: end;\n  -webkit-justify-content: flex-end;\n      -ms-flex-pack: end;\n          justify-content: flex-end;\n  list-style: none;\n  margin: 0;\n  padding: 2rem 0; }\n", ""]);
 
   // exports
 
@@ -1920,7 +1943,7 @@ module.exports =
 
 
   // module
-  exports.push([module.id, "/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n.img-col {\n  -webkit-columns: 2;\n     -moz-columns: 2;\n          columns: 2; }\n  @media (max-width: 768px) {\n    .img-col {\n      -webkit-columns: 1;\n         -moz-columns: 1;\n              columns: 1; } }\n\n.project {\n  margin: 3rem 0; }\n  .project .bg-text {\n    background-color: #333;\n    color: #fff;\n    display: inline-block;\n    padding: 1rem; }\n  .project h3 small {\n    font-size: .5em; }\n", ""]);
+  exports.push([module.id, "/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n.home-page .hero-container {\n  margin-bottom: 2rem;\n  position: relative; }\n  .home-page .hero-container .headline {\n    background-color: rgba(0, 0, 0, 0.8);\n    bottom: 3rem;\n    color: #fff;\n    padding: 1rem 0;\n    position: absolute;\n    width: 100%; }\n    @media (max-width: 768px) {\n      .home-page .hero-container .headline h1 {\n        font-size: 2rem;\n        line-height: .9; }\n        .home-page .hero-container .headline h1 small {\n          font-size: 70%;\n          font-weight: 300; } }\n", ""]);
 
   // exports
 
@@ -1929,604 +1952,624 @@ module.exports =
 /* 29 */
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__.p + "new-alliance-hs-manual-06-26-2015.pdf";
+  exports = module.exports = __webpack_require__(2)();
+  // imports
+
+
+  // module
+  exports.push([module.id, "/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n.img-col {\n  -webkit-columns: 2;\n     -moz-columns: 2;\n          columns: 2; }\n  @media (max-width: 768px) {\n    .img-col {\n      -webkit-columns: 1;\n         -moz-columns: 1;\n              columns: 1; } }\n\n.project {\n  margin: 3rem 0; }\n  .project .bg-text {\n    background-color: #333;\n    color: #fff;\n    display: inline-block;\n    padding: 1rem; }\n  .project h3 small {\n    font-size: .5em; }\n", ""]);
+
+  // exports
+
 
 /***/ },
 /* 30 */
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__.p + "new-alliance-standards-2015.pdf";
+  module.exports = __webpack_require__.p + "new-alliance-hs-manual-06-26-2015.pdf";
 
 /***/ },
 /* 31 */
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__.p + "safety-policy-acknowledgement.pdf";
+  module.exports = __webpack_require__.p + "new-alliance-standards-2015.pdf";
 
 /***/ },
 /* 32 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-  module.exports = '{"srcset":"barton-1-300w.jpg 300w ,barton-1-600w.jpg 600w "}'
+  module.exports = __webpack_require__.p + "safety-policy-acknowledgement.pdf";
 
 /***/ },
 /* 33 */
 /***/ function(module, exports) {
 
-  module.exports = '{"srcset":"barton-2-300w.jpg 300w ,barton-2-600w.jpg 600w "}'
+  module.exports = '{"srcset":"barton-1-300w.jpg 300w ,barton-1-600w.jpg 600w "}'
 
 /***/ },
 /* 34 */
 /***/ function(module, exports) {
 
-  module.exports = '{"srcset":"barton-3-300w.jpg 300w ,barton-3-600w.jpg 600w "}'
+  module.exports = '{"srcset":"barton-2-300w.jpg 300w ,barton-2-600w.jpg 600w "}'
 
 /***/ },
 /* 35 */
 /***/ function(module, exports) {
 
-  module.exports = '{"srcset":"barton-4-300w.jpg 300w ,barton-4-600w.jpg 600w "}'
+  module.exports = '{"srcset":"barton-3-300w.jpg 300w ,barton-3-600w.jpg 600w "}'
 
 /***/ },
 /* 36 */
 /***/ function(module, exports) {
 
-  module.exports = '{"srcset":"barton-5-300w.jpg 300w ,barton-5-600w.jpg 600w "}'
+  module.exports = '{"srcset":"barton-4-300w.jpg 300w ,barton-4-600w.jpg 600w "}'
 
 /***/ },
 /* 37 */
 /***/ function(module, exports) {
 
-  module.exports = '{"srcset":"barton-6-300w.jpg 300w ,barton-6-600w.jpg 600w "}'
+  module.exports = '{"srcset":"barton-5-300w.jpg 300w ,barton-5-600w.jpg 600w "}'
 
 /***/ },
 /* 38 */
 /***/ function(module, exports) {
 
-  module.exports = '{"srcset":"barton-7-300w.jpg 300w ,barton-7-600w.jpg 600w "}'
+  module.exports = '{"srcset":"barton-6-300w.jpg 300w ,barton-6-600w.jpg 600w "}'
 
 /***/ },
 /* 39 */
 /***/ function(module, exports) {
 
-  module.exports = '{"srcset":"barton-8-300w.jpg 300w ,barton-8-600w.jpg 600w "}'
+  module.exports = '{"srcset":"barton-7-300w.jpg 300w ,barton-7-600w.jpg 600w "}'
 
 /***/ },
 /* 40 */
 /***/ function(module, exports) {
 
-  module.exports = '{"srcset":"barton-9-300w.jpg 300w ,barton-9-600w.jpg 600w "}'
+  module.exports = '{"srcset":"barton-8-300w.jpg 300w ,barton-8-600w.jpg 600w "}'
 
 /***/ },
 /* 41 */
 /***/ function(module, exports) {
 
-  module.exports = '{"srcset":"centennial-1-300w.jpg 300w ,centennial-1-600w.jpg 600w "}'
+  module.exports = '{"srcset":"barton-9-300w.jpg 300w ,barton-9-600w.jpg 600w "}'
 
 /***/ },
 /* 42 */
 /***/ function(module, exports) {
 
-  module.exports = '{"srcset":"centennial-2-300w.jpg 300w ,centennial-2-600w.jpg 600w "}'
+  module.exports = '{"srcset":"centennial-1-300w.jpg 300w ,centennial-1-600w.jpg 600w "}'
 
 /***/ },
 /* 43 */
 /***/ function(module, exports) {
 
-  module.exports = '{"srcset":"centennial-3-300w.jpg 300w ,centennial-3-600w.jpg 600w "}'
+  module.exports = '{"srcset":"centennial-2-300w.jpg 300w ,centennial-2-600w.jpg 600w "}'
 
 /***/ },
 /* 44 */
 /***/ function(module, exports) {
 
-  module.exports = '{"srcset":"centennial-4-300w.jpg 300w ,centennial-4-600w.jpg 600w "}'
+  module.exports = '{"srcset":"centennial-3-300w.jpg 300w ,centennial-3-600w.jpg 600w "}'
 
 /***/ },
 /* 45 */
 /***/ function(module, exports) {
 
-  module.exports = '{"srcset":"centennial-5-300w.jpg 300w ,centennial-5-600w.jpg 600w "}'
+  module.exports = '{"srcset":"centennial-4-300w.jpg 300w ,centennial-4-600w.jpg 600w "}'
 
 /***/ },
 /* 46 */
 /***/ function(module, exports) {
 
-  module.exports = '{"srcset":"centennial-6-300w.jpg 300w ,centennial-6-600w.jpg 600w "}'
+  module.exports = '{"srcset":"centennial-5-300w.jpg 300w ,centennial-5-600w.jpg 600w "}'
 
 /***/ },
 /* 47 */
 /***/ function(module, exports) {
 
-  module.exports = '{"srcset":"centennial-7-300w.jpg 300w ,centennial-7-600w.jpg 600w "}'
+  module.exports = '{"srcset":"centennial-6-300w.jpg 300w ,centennial-6-600w.jpg 600w "}'
 
 /***/ },
 /* 48 */
 /***/ function(module, exports) {
 
-  module.exports = '{"srcset":"centennial-8-300w.jpg 300w ,centennial-8-600w.jpg 600w "}'
+  module.exports = '{"srcset":"centennial-7-300w.jpg 300w ,centennial-7-600w.jpg 600w "}'
 
 /***/ },
 /* 49 */
 /***/ function(module, exports) {
 
-  module.exports = '{"srcset":"centennial-9-300w.jpg 300w ,centennial-9-600w.jpg 600w "}'
+  module.exports = '{"srcset":"centennial-8-300w.jpg 300w ,centennial-8-600w.jpg 600w "}'
 
 /***/ },
 /* 50 */
 /***/ function(module, exports) {
 
-  module.exports = '{"srcset":"derry-1-300w.jpg 300w ,derry-1-600w.jpg 600w "}'
+  module.exports = '{"srcset":"centennial-9-300w.jpg 300w ,centennial-9-600w.jpg 600w "}'
 
 /***/ },
 /* 51 */
 /***/ function(module, exports) {
 
-  module.exports = '{"srcset":"derry-10-300w.jpg 300w ,derry-10-600w.jpg 600w "}'
+  module.exports = '{"srcset":"derry-1-300w.jpg 300w ,derry-1-600w.jpg 600w "}'
 
 /***/ },
 /* 52 */
 /***/ function(module, exports) {
 
-  module.exports = '{"srcset":"derry-2-300w.jpg 300w ,derry-2-600w.jpg 600w "}'
+  module.exports = '{"srcset":"derry-10-300w.jpg 300w ,derry-10-600w.jpg 600w "}'
 
 /***/ },
 /* 53 */
 /***/ function(module, exports) {
 
-  module.exports = '{"srcset":"derry-3-300w.jpg 300w ,derry-3-600w.jpg 600w "}'
+  module.exports = '{"srcset":"derry-2-300w.jpg 300w ,derry-2-600w.jpg 600w "}'
 
 /***/ },
 /* 54 */
 /***/ function(module, exports) {
 
-  module.exports = '{"srcset":"derry-4-300w.jpg 300w ,derry-4-600w.jpg 600w "}'
+  module.exports = '{"srcset":"derry-3-300w.jpg 300w ,derry-3-600w.jpg 600w "}'
 
 /***/ },
 /* 55 */
 /***/ function(module, exports) {
 
-  module.exports = '{"srcset":"derry-5-300w.jpg 300w ,derry-5-600w.jpg 600w "}'
+  module.exports = '{"srcset":"derry-4-300w.jpg 300w ,derry-4-600w.jpg 600w "}'
 
 /***/ },
 /* 56 */
 /***/ function(module, exports) {
 
-  module.exports = '{"srcset":"derry-6-300w.jpg 300w ,derry-6-600w.jpg 600w "}'
+  module.exports = '{"srcset":"derry-5-300w.jpg 300w ,derry-5-600w.jpg 600w "}'
 
 /***/ },
 /* 57 */
 /***/ function(module, exports) {
 
-  module.exports = '{"srcset":"derry-7-300w.jpg 300w ,derry-7-600w.jpg 600w "}'
+  module.exports = '{"srcset":"derry-6-300w.jpg 300w ,derry-6-600w.jpg 600w "}'
 
 /***/ },
 /* 58 */
 /***/ function(module, exports) {
 
-  module.exports = '{"srcset":"derry-8-300w.jpg 300w ,derry-8-600w.jpg 600w "}'
+  module.exports = '{"srcset":"derry-7-300w.jpg 300w ,derry-7-600w.jpg 600w "}'
 
 /***/ },
 /* 59 */
 /***/ function(module, exports) {
 
-  module.exports = '{"srcset":"derry-9-300w.jpg 300w ,derry-9-600w.jpg 600w "}'
+  module.exports = '{"srcset":"derry-8-300w.jpg 300w ,derry-8-600w.jpg 600w "}'
 
 /***/ },
 /* 60 */
 /***/ function(module, exports) {
 
-  module.exports = '{"srcset":"king-1-300w.jpg 300w ,king-1-600w.jpg 600w "}'
+  module.exports = '{"srcset":"derry-9-300w.jpg 300w ,derry-9-600w.jpg 600w "}'
 
 /***/ },
 /* 61 */
 /***/ function(module, exports) {
 
-  module.exports = '{"srcset":"king-2-300w.jpg 300w ,king-2-600w.jpg 600w "}'
+  module.exports = '{"srcset":"king-1-300w.jpg 300w ,king-1-600w.jpg 600w "}'
 
 /***/ },
 /* 62 */
 /***/ function(module, exports) {
 
-  module.exports = '{"srcset":"king-3-300w.jpg 300w ,king-3-600w.jpg 600w "}'
+  module.exports = '{"srcset":"king-2-300w.jpg 300w ,king-2-600w.jpg 600w "}'
 
 /***/ },
 /* 63 */
 /***/ function(module, exports) {
 
-  module.exports = '{"srcset":"king-4-300w.jpg 300w ,king-4-600w.jpg 600w "}'
+  module.exports = '{"srcset":"king-3-300w.jpg 300w ,king-3-600w.jpg 600w "}'
 
 /***/ },
 /* 64 */
 /***/ function(module, exports) {
 
-  module.exports = '{"srcset":"king-5-300w.jpg 300w ,king-5-600w.jpg 600w "}'
+  module.exports = '{"srcset":"king-4-300w.jpg 300w ,king-4-600w.jpg 600w "}'
 
 /***/ },
 /* 65 */
 /***/ function(module, exports) {
 
-  module.exports = '{"srcset":"king-6-300w.jpg 300w ,king-6-600w.jpg 600w "}'
+  module.exports = '{"srcset":"king-5-300w.jpg 300w ,king-5-600w.jpg 600w "}'
 
 /***/ },
 /* 66 */
 /***/ function(module, exports) {
 
-  module.exports = '{"srcset":"king-7-300w.jpg 300w ,king-7-600w.jpg 600w "}'
+  module.exports = '{"srcset":"king-6-300w.jpg 300w ,king-6-600w.jpg 600w "}'
 
 /***/ },
 /* 67 */
 /***/ function(module, exports) {
 
-  module.exports = '{"srcset":"ttc-1-300w.jpg 300w ,ttc-1-600w.jpg 600w "}'
+  module.exports = '{"srcset":"king-7-300w.jpg 300w ,king-7-600w.jpg 600w "}'
 
 /***/ },
 /* 68 */
 /***/ function(module, exports) {
 
-  module.exports = '{"srcset":"ttc-10-300w.jpg 300w ,ttc-10-600w.jpg 600w "}'
+  module.exports = '{"srcset":"ttc-1-300w.jpg 300w ,ttc-1-600w.jpg 600w "}'
 
 /***/ },
 /* 69 */
 /***/ function(module, exports) {
 
-  module.exports = '{"srcset":"ttc-11-300w.jpg 300w ,ttc-11-600w.jpg 600w "}'
+  module.exports = '{"srcset":"ttc-10-300w.jpg 300w ,ttc-10-600w.jpg 600w "}'
 
 /***/ },
 /* 70 */
 /***/ function(module, exports) {
 
-  module.exports = '{"srcset":"ttc-2-300w.jpg 300w ,ttc-2-600w.jpg 600w "}'
+  module.exports = '{"srcset":"ttc-11-300w.jpg 300w ,ttc-11-600w.jpg 600w "}'
 
 /***/ },
 /* 71 */
 /***/ function(module, exports) {
 
-  module.exports = '{"srcset":"ttc-3-300w.jpg 300w ,ttc-3-600w.jpg 600w "}'
+  module.exports = '{"srcset":"ttc-2-300w.jpg 300w ,ttc-2-600w.jpg 600w "}'
 
 /***/ },
 /* 72 */
 /***/ function(module, exports) {
 
-  module.exports = '{"srcset":"ttc-4-300w.jpg 300w ,ttc-4-600w.jpg 600w "}'
+  module.exports = '{"srcset":"ttc-3-300w.jpg 300w ,ttc-3-600w.jpg 600w "}'
 
 /***/ },
 /* 73 */
 /***/ function(module, exports) {
 
-  module.exports = '{"srcset":"ttc-5-300w.jpg 300w ,ttc-5-600w.jpg 600w "}'
+  module.exports = '{"srcset":"ttc-4-300w.jpg 300w ,ttc-4-600w.jpg 600w "}'
 
 /***/ },
 /* 74 */
 /***/ function(module, exports) {
 
-  module.exports = '{"srcset":"ttc-6-300w.jpg 300w ,ttc-6-600w.jpg 600w "}'
+  module.exports = '{"srcset":"ttc-5-300w.jpg 300w ,ttc-5-600w.jpg 600w "}'
 
 /***/ },
 /* 75 */
 /***/ function(module, exports) {
 
-  module.exports = '{"srcset":"ttc-7-300w.jpg 300w ,ttc-7-600w.jpg 600w "}'
+  module.exports = '{"srcset":"ttc-6-300w.jpg 300w ,ttc-6-600w.jpg 600w "}'
 
 /***/ },
 /* 76 */
 /***/ function(module, exports) {
 
-  module.exports = '{"srcset":"ttc-8-300w.jpg 300w ,ttc-8-600w.jpg 600w "}'
+  module.exports = '{"srcset":"ttc-7-300w.jpg 300w ,ttc-7-600w.jpg 600w "}'
 
 /***/ },
 /* 77 */
 /***/ function(module, exports) {
 
-  module.exports = '{"srcset":"ttc-9-300w.jpg 300w ,ttc-9-600w.jpg 600w "}'
+  module.exports = '{"srcset":"ttc-8-300w.jpg 300w ,ttc-8-600w.jpg 600w "}'
 
 /***/ },
 /* 78 */
 /***/ function(module, exports) {
 
-  module.exports = '{"srcset":"new-alliance-logo-600w.png 600w ,new-alliance-logo-300w.png 300w "}'
+  module.exports = '{"srcset":"ttc-9-300w.jpg 300w ,ttc-9-600w.jpg 600w "}'
 
 /***/ },
 /* 79 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
-  module.exports = __webpack_require__.p + "3726673c39402d73b1a2a441af6915ce.png";
+  module.exports = '{"srcset":"new-alliance-logo-600w.png 600w ,new-alliance-logo-300w.png 300w "}'
 
 /***/ },
 /* 80 */
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__.p + "65e475c9e3b6a1b8982ce74078964dcf.jpg";
+  module.exports = __webpack_require__.p + "3726673c39402d73b1a2a441af6915ce.png";
 
 /***/ },
 /* 81 */
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__.p + "cd2294e4039422a4966eee5c4741b5a1.jpg";
+  module.exports = __webpack_require__.p + "65e475c9e3b6a1b8982ce74078964dcf.jpg";
 
 /***/ },
 /* 82 */
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__.p + "6f4b915ac1c13532788d4fa2cc915267.jpg";
+  module.exports = __webpack_require__.p + "cd2294e4039422a4966eee5c4741b5a1.jpg";
 
 /***/ },
 /* 83 */
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__.p + "c8cd63c1a9f98ff4f5cc14c3bf856c51.jpg";
+  module.exports = __webpack_require__.p + "6f4b915ac1c13532788d4fa2cc915267.jpg";
 
 /***/ },
 /* 84 */
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__.p + "3b9b44971913aa3407276ec1879ca15c.jpg";
+  module.exports = __webpack_require__.p + "c8cd63c1a9f98ff4f5cc14c3bf856c51.jpg";
 
 /***/ },
 /* 85 */
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__.p + "e333d2c662ae4b1d58910686ad417913.jpg";
+  module.exports = __webpack_require__.p + "3b9b44971913aa3407276ec1879ca15c.jpg";
 
 /***/ },
 /* 86 */
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__.p + "e92324a0f4e822f41901e9d0b9b742f9.jpg";
+  module.exports = __webpack_require__.p + "e333d2c662ae4b1d58910686ad417913.jpg";
 
 /***/ },
 /* 87 */
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__.p + "329a5a61e9e145b4a2a0a5fb21370236.jpg";
+  module.exports = __webpack_require__.p + "e92324a0f4e822f41901e9d0b9b742f9.jpg";
 
 /***/ },
 /* 88 */
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__.p + "726b24aa96c6a170b315b8005ec36cef.jpg";
+  module.exports = __webpack_require__.p + "329a5a61e9e145b4a2a0a5fb21370236.jpg";
 
 /***/ },
 /* 89 */
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__.p + "02a7e365430338bc51c714548d37f607.jpg";
+  module.exports = __webpack_require__.p + "726b24aa96c6a170b315b8005ec36cef.jpg";
 
 /***/ },
 /* 90 */
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__.p + "c59f1c07bac65d633e0f9b942ec3e33b.jpg";
+  module.exports = __webpack_require__.p + "02a7e365430338bc51c714548d37f607.jpg";
 
 /***/ },
 /* 91 */
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__.p + "fb872fbc2592e1a493ac286cfb7c3417.jpg";
+  module.exports = __webpack_require__.p + "c59f1c07bac65d633e0f9b942ec3e33b.jpg";
 
 /***/ },
 /* 92 */
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__.p + "995556a1046dc488ee316ca19cd7f882.jpg";
+  module.exports = __webpack_require__.p + "fb872fbc2592e1a493ac286cfb7c3417.jpg";
 
 /***/ },
 /* 93 */
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__.p + "58645981aebe9a96c5f7448ac202f50c.jpg";
+  module.exports = __webpack_require__.p + "995556a1046dc488ee316ca19cd7f882.jpg";
 
 /***/ },
 /* 94 */
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__.p + "5b832e181090d6724e89130ddad223c8.jpg";
+  module.exports = __webpack_require__.p + "58645981aebe9a96c5f7448ac202f50c.jpg";
 
 /***/ },
 /* 95 */
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__.p + "58f955dab06948fe2a08864354808ae7.jpg";
+  module.exports = __webpack_require__.p + "5b832e181090d6724e89130ddad223c8.jpg";
 
 /***/ },
 /* 96 */
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__.p + "0346b2aa9b6a7da18ca71ecc61163795.jpg";
+  module.exports = __webpack_require__.p + "58f955dab06948fe2a08864354808ae7.jpg";
 
 /***/ },
 /* 97 */
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__.p + "91f9e704a3aa3076d7aa461e9a5c29ed.jpg";
+  module.exports = __webpack_require__.p + "0346b2aa9b6a7da18ca71ecc61163795.jpg";
 
 /***/ },
 /* 98 */
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__.p + "0768ba2339e82c0fd4e840826cd6c176.jpg";
+  module.exports = __webpack_require__.p + "91f9e704a3aa3076d7aa461e9a5c29ed.jpg";
 
 /***/ },
 /* 99 */
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__.p + "840574cb5e4723b8c8912d5d96d3cdbc.jpg";
+  module.exports = __webpack_require__.p + "0768ba2339e82c0fd4e840826cd6c176.jpg";
 
 /***/ },
 /* 100 */
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__.p + "000074eb7a5ba65e3f9104c7f82a9dcd.jpg";
+  module.exports = __webpack_require__.p + "840574cb5e4723b8c8912d5d96d3cdbc.jpg";
 
 /***/ },
 /* 101 */
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__.p + "5a0ceef0ada3245101ae87aeb724444f.jpg";
+  module.exports = __webpack_require__.p + "000074eb7a5ba65e3f9104c7f82a9dcd.jpg";
 
 /***/ },
 /* 102 */
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__.p + "347af6659862491034e00fc37a53e4f4.jpg";
+  module.exports = __webpack_require__.p + "5a0ceef0ada3245101ae87aeb724444f.jpg";
 
 /***/ },
 /* 103 */
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__.p + "bd29a78fbc5dcbb3393d35c4410e1582.jpg";
+  module.exports = __webpack_require__.p + "347af6659862491034e00fc37a53e4f4.jpg";
 
 /***/ },
 /* 104 */
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__.p + "ac5dd214dc224cf681bc894a9aae312f.jpg";
+  module.exports = __webpack_require__.p + "bd29a78fbc5dcbb3393d35c4410e1582.jpg";
 
 /***/ },
 /* 105 */
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__.p + "e47b1cc66779964439f8eb28ac6b4d3a.jpg";
+  module.exports = __webpack_require__.p + "ac5dd214dc224cf681bc894a9aae312f.jpg";
 
 /***/ },
 /* 106 */
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__.p + "71e7cef536149eea5568f01169a47e8a.jpg";
+  module.exports = __webpack_require__.p + "e47b1cc66779964439f8eb28ac6b4d3a.jpg";
 
 /***/ },
 /* 107 */
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__.p + "25c2027e4ce22c1c8543bcc81f0c708d.jpg";
+  module.exports = __webpack_require__.p + "71e7cef536149eea5568f01169a47e8a.jpg";
 
 /***/ },
 /* 108 */
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__.p + "53e381d5ad36ec833c1bb82a188ba9e1.jpg";
+  module.exports = __webpack_require__.p + "25c2027e4ce22c1c8543bcc81f0c708d.jpg";
 
 /***/ },
 /* 109 */
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__.p + "a62d2fdb770048b06bb138bfd730aec6.jpg";
+  module.exports = __webpack_require__.p + "53e381d5ad36ec833c1bb82a188ba9e1.jpg";
 
 /***/ },
 /* 110 */
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__.p + "45cda26534a88fd7f6d9e4b7570c4fe2.jpg";
+  module.exports = __webpack_require__.p + "a62d2fdb770048b06bb138bfd730aec6.jpg";
 
 /***/ },
 /* 111 */
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__.p + "c72a1c49ac193f70edbcec080c1d7e40.jpg";
+  module.exports = __webpack_require__.p + "45cda26534a88fd7f6d9e4b7570c4fe2.jpg";
 
 /***/ },
 /* 112 */
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__.p + "6cb58b70796e2c03728a2dbc80a3d6e3.jpg";
+  module.exports = __webpack_require__.p + "c72a1c49ac193f70edbcec080c1d7e40.jpg";
 
 /***/ },
 /* 113 */
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__.p + "da632078c5e50ec4d8592be081f37941.jpg";
+  module.exports = __webpack_require__.p + "6cb58b70796e2c03728a2dbc80a3d6e3.jpg";
 
 /***/ },
 /* 114 */
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__.p + "57018223c5526f0892ad29fde5692e06.jpg";
+  module.exports = __webpack_require__.p + "da632078c5e50ec4d8592be081f37941.jpg";
 
 /***/ },
 /* 115 */
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__.p + "90e27e2c7c06d41b370ceb05b5f74527.jpg";
+  module.exports = __webpack_require__.p + "57018223c5526f0892ad29fde5692e06.jpg";
 
 /***/ },
 /* 116 */
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__.p + "461f55df24aa8c48631ea615f0742174.jpg";
+  module.exports = __webpack_require__.p + "90e27e2c7c06d41b370ceb05b5f74527.jpg";
 
 /***/ },
 /* 117 */
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__.p + "009fe7923fd53baabcb7a44f599aa381.jpg";
+  module.exports = __webpack_require__.p + "461f55df24aa8c48631ea615f0742174.jpg";
 
 /***/ },
 /* 118 */
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__.p + "d9b87f00357087af5cf5410014f50850.jpg";
+  module.exports = __webpack_require__.p + "009fe7923fd53baabcb7a44f599aa381.jpg";
 
 /***/ },
 /* 119 */
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__.p + "02d994057df4d4816da071dba695e423.jpg";
+  module.exports = __webpack_require__.p + "d9b87f00357087af5cf5410014f50850.jpg";
 
 /***/ },
 /* 120 */
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__.p + "393f5b6b8157c8fea778c456d904ea90.jpg";
+  module.exports = __webpack_require__.p + "02d994057df4d4816da071dba695e423.jpg";
 
 /***/ },
 /* 121 */
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__.p + "38d04f58a50423e2d6c4766c63c0ab03.jpg";
+  module.exports = __webpack_require__.p + "393f5b6b8157c8fea778c456d904ea90.jpg";
 
 /***/ },
 /* 122 */
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__.p + "c8bdd2b51d5f4b4c2d52affec3a71e3e.jpg";
+  module.exports = __webpack_require__.p + "38d04f58a50423e2d6c4766c63c0ab03.jpg";
 
 /***/ },
 /* 123 */
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__.p + "fe966fa8bca9eb20810d98e9f7d1b01d.jpg";
+  module.exports = __webpack_require__.p + "c8bdd2b51d5f4b4c2d52affec3a71e3e.jpg";
 
 /***/ },
 /* 124 */
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__.p + "22f729c4d92eca3e21659632c2c36d37.jpg";
+  module.exports = __webpack_require__.p + "fe966fa8bca9eb20810d98e9f7d1b01d.jpg";
 
 /***/ },
 /* 125 */
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__.p + "a2af54dd0d683a127d37503fc2ca6588.jpg";
+  module.exports = __webpack_require__.p + "22f729c4d92eca3e21659632c2c36d37.jpg";
 
 /***/ },
 /* 126 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-  module.exports = require("history/lib/createBrowserHistory");
+  module.exports = __webpack_require__.p + "a2af54dd0d683a127d37503fc2ca6588.jpg";
 
 /***/ },
 /* 127 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-  module.exports = require("history/lib/createMemoryHistory");
+  module.exports = {srcSet:__webpack_require__.p + "9c7481f29912e96f38162d2a0f031681-400.jpg 400w"+","+__webpack_require__.p + "8afc66d0ea0ec9fac9004c2027fe9e78-800.jpg 800w"+","+__webpack_require__.p + "2e42bf38000a4264a38e257aaba4f388-1400.jpg 1400w",images:[{path:__webpack_require__.p + "9c7481f29912e96f38162d2a0f031681-400.jpg",width:400},{path:__webpack_require__.p + "8afc66d0ea0ec9fac9004c2027fe9e78-800.jpg",width:800},{path:__webpack_require__.p + "2e42bf38000a4264a38e257aaba4f388-1400.jpg",width:1400}],src:__webpack_require__.p + "9c7481f29912e96f38162d2a0f031681-400.jpg",toString:function(){return __webpack_require__.p + "9c7481f29912e96f38162d2a0f031681-400.jpg"}};
 
 /***/ },
 /* 128 */
 /***/ function(module, exports) {
 
-  module.exports = require("history/lib/useQueries");
+  module.exports = require("history/lib/createBrowserHistory");
 
 /***/ },
 /* 129 */
+/***/ function(module, exports) {
+
+  module.exports = require("history/lib/createMemoryHistory");
+
+/***/ },
+/* 130 */
+/***/ function(module, exports) {
+
+  module.exports = require("history/lib/useQueries");
+
+/***/ },
+/* 131 */
 /***/ function(module, exports) {
 
   module.exports = require("react-dom");
