@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Grid, PageHeader, Button } from 'react-bootstrap';
+import { Grid, PageHeader } from 'react-bootstrap';
 
 const hsManual = require('file?name=[name].[ext]!../files/new-alliance-hs-manual-06-26-2015.pdf');
 const hsStandards = require('file?name=[name].[ext]!../files/new-alliance-standards-2015.pdf');
@@ -20,17 +20,17 @@ export default class Contractors extends Component {
 
         <div className="hs-policy-step">
           <h3>Step 1: Download and read the Health and Safety manual</h3>
-          <Button href={hsManual}>Download Health & Safety manual</Button>
+          <a className="btn btn-link text-wrap" href={hsManual}>Download Health & Safety manual</a>
         </div>
 
         <div className="hs-policy-step">
           <h3>Step 2: Download and read the Safety, Health and Enironmental Standards document</h3>
-          <Button href={hsStandards}>Download Safety, Health and Enironmental Standards document</Button>
+          <a className="btn btn-link text-wrap" href={hsStandards}>Download Safety, Health and Enironmental Standards document</a>
         </div>
 
         <div className="hs-policy-step">
           <h3>Step 3: Download, sign and return the Saftey Policy Acknowledgement form</h3>
-          <Button href={hsAck}>Download Saftey Policy Acknowledgement form</Button>
+          <a className="btn btn-link text-wrap" href={hsAck}>Download Saftey Policy Acknowledgement form</a>
         </div>
       </Grid>
     );

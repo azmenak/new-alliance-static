@@ -4,3 +4,5 @@ $enable-flex: true !global;
 $enable-rounded: true !global;
 
 @import "~bootstrap/scss/bootstrap";
+
+.text-wrap { white-space: normal !important; }

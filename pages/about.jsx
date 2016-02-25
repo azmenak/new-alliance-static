@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import _ from 'lodash';
-import { Grid, Row, Col, PageHeader, Button } from 'react-bootstrap';
+import { Grid, Row, Col, PageHeader } from 'react-bootstrap';
 
 export default class About extends Component {
   constructor(options) {
@@ -27,12 +27,12 @@ export default class About extends Component {
       position: 'Contract Administrator',
       description: `Lori Gierling has worked in the Construction Industry for almost 15 years, joining New Alliance in 2013. Lori brings with her experience in Project and Construction Management principles and practices which ensure that Client Contract requirements and expectations are met on time and on budget.`
     }, {
-      name: 'Jose Tadeo Monagas',
-      position: 'Chief Estimator'
-    }, {
       name: 'Marie-Elaine Groulx',
       position: 'Construction Supervisor',
       description: `The Ontario Civil Construction world welcome Marie-Elaine Groulx after a 10 year career in the HVAC industry in QC. Her employment with New Alliance has helped improve the structure of the company in that it has become more efficient and organized due to her timely response to all issues on projects she has dealt with. Multiple projects that she have managed have come in under budget, on-time and she has brought ideas that have improved the scope of work and at the same time, motivated our employees to try to excel and improve the quality of the work with safety as a priority. She achieves an effective solution to any challenge. Marie possesses a diploma in HVACR from La Polymechanique de Laval and has completed multiple industry related courses. She has proven to be invaluable asset to our organizational and most importantly to the clients we serve.`
+    }, {
+      name: 'Jose Tadeo Monagas',
+      position: 'Chief Estimator'
     }];
   }
 
@@ -83,11 +83,11 @@ export default class About extends Component {
           <p>Two directors leading our staff of 65 plus members composed of excellent engineers, managers, supervisors and various crews including: Sewer, Watermain, Bridge, Curb/Sidewalk, Excavation and Roadworks.</p>
         </div>
 
-        <hr />
+        <hr className="m-y-3" />
 
         <Row>
           {_.map(this.staff, s =>
-            <Col xs={12} md={6}>
+            <Col xs={12} md={6} key={s.name}>
               <h4>{ s.name }, <i>{ s.position }</i></h4>
               { s.description && <p>{ s.description }</p> }
             </Col>

@@ -1,6 +1,7 @@
 @import '../variables';
 
 .navigation {
+  clear: both;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

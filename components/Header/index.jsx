@@ -19,6 +19,10 @@ export default class Header extends Component {
             src={logoImg}
             srcSet={logoResponsive.srcset}
           />
+          <div className="cta-call-us clearfix">
+            <h4>Get a free consultation</h4>
+            <span>call us <span className="phone-number">(905) 637-8883</span></span>
+          </div>
           <Navigation />
         </Grid>
       </header>

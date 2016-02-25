@@ -21,7 +21,7 @@ export default class Projects extends Component {
             <div className="project" key={project.name}>
               <h3>
                 <div className="bg-text">
-                  { project.name } <small className="year">({ project.year })</small>
+                  { poroject.name } <small className="year">({ project.year })</small>
                 </div>
               </h3>
               <div className='img-col'>
