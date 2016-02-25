@@ -80,7 +80,7 @@ export function baseConfig({ debug, verbose, watch }) {
         require('postcss-import')({ addDependencyTo: bundler }),
         require('precss')(),
         require('autoprefixer')({
-          browsers: autoprefixerBrowsers,
+          browsers: autoprefixerBrowsers
         })
       ];
     },
