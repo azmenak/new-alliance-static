@@ -1,0 +1,29 @@
+@import '../../components/variables';
+
+.home-page {
+  .hero-container {
+    margin-bottom: 2rem;
+    position: relative;
+
+    .headline {
+      background-color: rgba(0, 0, 0, .8);
+      bottom: 3rem;
+      color: #fff;
+      padding: 1rem 0;
+      position: absolute;
+      width: 100%;
+
+      @media (max-width: $screen-sm-min) {
+        h1 {
+          font-size: 2rem;
+          line-height: .9;
+
+          small {
+            font-size: 70%;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+}

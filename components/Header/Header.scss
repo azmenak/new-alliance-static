@@ -1,3 +1,5 @@
+@import '../variables';
+
 .top-bar {
   margin-top: 2rem;
 
@@ -7,5 +9,12 @@
 
   .cta-call-us {
     float: right;
+    margin-top: 1rem;
+    @media (max-width: $screen-sm-min) {
+      float: none;
+      line-height: .5;
+      margin-top: 2rem;
+      text-align: center;
+    }
   }
 }

@@ -1,18 +1,29 @@
+import './home/home.scss';
 import React, { Component } from 'react';
 import { Grid, PageHeader } from 'react-bootstrap';
+
+const derryRoadAdj = require('responsive?sizes[]=400,sizes[]=800,sizes[]=1400!../images/home/web/aerial-derry-road-adjusted.jpg');
 
 export default class extends Component {
 
   render() {
     return (
+      <div className="home-page">
+        <div className="hero-container">
+          <img className="max-width hero-img" {...derryRoadAdj} />
+            <div className="headline page-heaader">
+              <Grid>
+                <h1>
+                  New-Alliance
+                  <br/>
+                  <small>Quality Construction for
+                    Commercial and Residential Developments in
+                    Ontario</small>
+                </h1>
+              </Grid>
+            </div>
+        </div>
       <Grid className="body-component">
-        <PageHeader className="headline">
-          New-Alliance
-          <br/>
-          <small>Quality Construction for
-          Commercial and Residential Developments in
-          Ontario</small>
-        </PageHeader>
         <p>
           At New-Alliance, we specialize in providing state-of-the-art
           Construction services for commercial, residential and municipal
@@ -82,6 +93,7 @@ export default class extends Component {
           </p>
         </div>
       </Grid>
+    </div>
     );
   }
 
