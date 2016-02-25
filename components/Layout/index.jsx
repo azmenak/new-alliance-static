@@ -1,4 +1,4 @@
-import './bootstrap.less';
+import './bootstrap.scss';
 
 import React, { PropTypes, Component } from 'react';
 import './Layout.scss';
@@ -7,7 +7,7 @@ import Header from '../Header';
 export default class Layout extends Component {
 
   static propTypes = {
-    children: PropTypes.element.isRequired,
+    children: PropTypes.element.isRequired
   }
 
   render() {

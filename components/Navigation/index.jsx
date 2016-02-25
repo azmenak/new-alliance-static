@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './Navigation.scss';
 import Link from '../Link';
 import _ from 'lodash';
-import Typeform from '../../pages/contact/Typeform';
 
 export default class Navigation extends Component {
   render() {
@@ -14,10 +13,10 @@ export default class Navigation extends Component {
     ];
 
     return (
-      <ul className="Navigation" role="menu">
+      <ul className="navigation" role="menu">
         { _.map(navItems, item =>
-          <li className="Navigation-item" key={item.href}>
-            <Link to={item.href}><span>{ item.label }</span></Link>
+          <li key={item.href}>
+            <Link className="btn btn-link" to={item.href}><span>{ item.label }</span></Link>
           </li>
         ) }
         <li className="typeform-link">
