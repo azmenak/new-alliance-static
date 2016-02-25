@@ -11,7 +11,7 @@ const autoprefixerBrowsers = [
   'Explorer >= 9',
   'iOS >= 7',
   'Opera >= 12',
-  'Safari >= 7.1',
+  'Safari >= 7.1'
 ];
 
 const jsLoader = {
@@ -22,9 +22,9 @@ const jsLoader = {
     path.resolve(__dirname, '../core'),
     path.resolve(__dirname, '../pages'),
     path.resolve(__dirname, '../app.js'),
-    path.resolve(__dirname, '../config.js'),
+    path.resolve(__dirname, '../config.js')
   ],
-  loader: 'babel-loader',
+  loader: 'babel-loader'
 };
 
 export function baseConfig({ debug, verbose, watch }) {
@@ -45,35 +45,35 @@ export function baseConfig({ debug, verbose, watch }) {
       chunks: verbose,
       chunkModules: verbose,
       cached: verbose,
-      cachedAssets: verbose,
+      cachedAssets: verbose
     },
     plugins: [
       new webpack.optimize.OccurenceOrderPlugin(),
       new AssetsPlugin({path: path.join(__dirname, '../build')}),
       new webpack.DefinePlugin({
         'process.env.NODE_ENV': debug ? '"development"' : '"production"',
-        '__DEV__': debug,
-      }),
+        '__DEV__': debug
+      })
     ],
     module: {
       loaders: [
         {
           test: /[\\\/]app\.js$/,
-          loader: path.join(__dirname, './lib/routes-loader.js'),
+          loader: path.join(__dirname, './lib/routes-loader.js')
         }, {
           test: /\.json$/,
-          loader: 'json-loader',
+          loader: 'json-loader'
         }, {
           test: /\.txt$/,
-          loader: 'raw-loader',
+          loader: 'raw-loader'
         }, {
           test: /\.(png|jpg|jpeg|gif|svg|woff|woff2)$/,
-          loader: 'url-loader?limit=10000',
+          loader: 'url-loader?limit=10000'
         }, {
           test: /\.(eot|ttf|wav|mp3)$/,
-          loader: 'file-loader',
-        },
-      ],
+          loader: 'file-loader'
+        }
+      ]
     },
     postcss: function plugins(bundler) {
       return [
@@ -81,7 +81,7 @@ export function baseConfig({ debug, verbose, watch }) {
         require('precss')(),
         require('autoprefixer')({
           browsers: autoprefixerBrowsers,
-        }),
+        })
       ];
     },
     resolve: {
@@ -111,7 +111,7 @@ export function appConfig(options) {
     ]),
 
     output: debug ? {
-      filename: 'app.js',
+      filename: 'app.js'
     } : {
       filename: 'app.[hash].js',
       chunkFilename: '[id].app.[hash].js'
@@ -124,15 +124,15 @@ export function appConfig(options) {
         new webpack.optimize.DedupePlugin(),
         new webpack.optimize.UglifyJsPlugin({
           compress: {
-            warnings: verbose,
-          },
+            warnings: verbose
+          }
         }),
         new webpack.optimize.AggressiveMergingPlugin()
       ]),
       ...(watch ? [
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NoErrorsPlugin()
-      ] : []),
+      ] : [])
     ],
     module: {
       loaders: [
@@ -151,12 +151,12 @@ export function appConfig(options) {
                 ]
               }]
             ]
-          },
+          }
         }) : jsLoader,
         ...config.module.loaders,
         {
           test: /\.scss$/,
-          loaders: ['style', 'css', 'postcss']
+          loaders: ['style', 'css', 'postcss', 'sass']
         },
         {
           test: /\.less$/,
@@ -175,7 +175,7 @@ export function pagesConfig(options) {
     },
     output: {
       filename: 'app.node.js',
-      libraryTarget: 'commonjs2',
+      libraryTarget: 'commonjs2'
     },
     target: 'node',
     node: {
@@ -184,11 +184,11 @@ export function pagesConfig(options) {
       process: false,
       Buffer: false,
       __filename: false,
-      __dirname: false,
+      __dirname: false
     },
     externals: /^[a-z][a-z\.\-\/0-9]*$/i,
     plugins: config.plugins.concat([
-      new webpack.optimize.LimitChunkCountPlugin({ maxChunks: 6 }),
+      new webpack.optimize.LimitChunkCountPlugin({ maxChunks: 6 })
     ]),
     module: {
       loaders: [
@@ -196,7 +196,7 @@ export function pagesConfig(options) {
         ...config.module.loaders,
         {
           test: /\.scss$/,
-          loaders: ['css', 'postcss'],
+          loaders: ['css', 'postcss', 'sass']
         },
         {
           test: /\.less$/,
